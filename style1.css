@@ -20,10 +20,11 @@ header {
   background-color: #562eff;
   padding: 15px 0px 10px 0px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 .fa-lightbulb {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 header span {
   font-size: 20px;
