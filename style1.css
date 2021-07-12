@@ -1,5 +1,34 @@
 /* main part style start */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+.nav-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  align-items: center;
+}
+.button-area a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  background-color: #562eff;
+  padding: 15px 0px 10px 0px;
+  margin-bottom: 10px;
+}
+.fa-lightbulb {
+  color: white;
+  font-size: 20px;
+}
+header span {
+  font-size: 20px;
+  color: #fff;
+}
 body {
   background-color: #f3f1ff;
   font-family: "Poppins", Courier, monospace;
@@ -104,6 +133,37 @@ hr {
 /* media quary */
 @media only screen and (max-width: 688px) {
   .sec-container {
+    width: 100%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    display: flex;
+    justify-content: center;
+  }
+  .blogs,
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .sec-container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
