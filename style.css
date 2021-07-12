@@ -81,11 +81,26 @@ hr {
   color: #562eff;
 }
 /* courses styles */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
 .course .course-banner img {
   height: 104px;
   width: 224px;
 }
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star {
+  font-size: 12px;
+}
 .fa-star.filled {
   color: #ffc014;
 }
-empty
+.empty {
+  color: #aeaeae;
+}
